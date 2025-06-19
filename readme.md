@@ -3,7 +3,7 @@
 * Admin: Used to create topics and partition for each topic
 * Consumer: Used to consume the messages.
 * Producer: Used to send the messages.
-* Run the docker image
+### Run the docker image
 ```cmd
 docker run -p 9092:9092 \
   -e CLUSTER_ID=abcd1234ef567890abcd1234ef567890 \
@@ -17,7 +17,7 @@ docker run -p 9092:9092 \
   confluentinc/cp-kafka:latest
 ```
 
-* Test service
+### Test service
 ```cmd
 node admin.js
 node consumer.js group-1
